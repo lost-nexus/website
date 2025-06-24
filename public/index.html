@@ -1,17 +1,50 @@
 <!doctype html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>KumaKo</title>
-    <script type="module" crossorigin src="/assets/index.js"></script>
-    <link rel="stylesheet" crossorigin href="/assets/index.css">
-</head>
+    <title>KumaKo — Currency Exchange</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-gradient-to-br from-gray-900 via-black to-gray-800 text-white font-sans">
 
-<body>
-    <div id="root"></div>
-</body>
+    <!-- Header -->
+    <header class="flex justify-between items-center px-6 py-4 bg-black bg-opacity-70 shadow-md">
+      <h1 class="text-2xl font-bold">KumaKo</h1>
+      <nav class="space-x-4">
+        <a href="#features" class="hover:text-blue-400 transition">Features</a>
+        <a href="#contact" class="hover:text-blue-400 transition">Contact</a>
+        <a href="#" class="bg-blue-600 px-4 py-2 rounded-md hover:bg-blue-700 transition">Login</a>
+      </nav>
+    </header>
 
+    <!-- Hero Section -->
+    <section class="text-center py-20 px-4">
+      <h2 class="text-4xl md:text-5xl font-bold mb-4">Fast. Secure. Global Currency Exchange</h2>
+      <p class="text-gray-300 max-w-xl mx-auto mb-8">Exchange crypto and fiat currencies with the best rates and lowest fees. Trusted worldwide.</p>
+      <a href="#get-started" class="inline-block bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-8 rounded-xl transition">Get Started</a>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="py-16 px-6 grid gap-8 md:grid-cols-3 max-w-6xl mx-auto">
+      <div class="bg-gray-800 bg-opacity-80 rounded-2xl p-6 shadow-xl hover:shadow-2xl transition-all duration-300">
+        <h3 class="text-xl font-semibold mb-2">Multi-Currency Support</h3>
+        <p class="text-gray-400">Exchange USD, INR, PayPal, UPI, BTC, ETH and more — all in one place.</p>
+      </div>
+      <div class="bg-gray-800 bg-opacity-80 rounded-2xl p-6 shadow-xl hover:shadow-2xl transition-all duration-300">
+        <h3 class="text-xl font-semibold mb-2">Low Fees</h3>
+        <p class="text-gray-400">Our platform charges the lowest commission to maximize your profits.</p>
+      </div>
+      <div class="bg-gray-800 bg-opacity-80 rounded-2xl p-6 shadow-xl hover:shadow-2xl transition-all duration-300">
+        <h3 class="text-xl font-semibold mb-2">24/7 Support</h3>
+        <p class="text-gray-400">Get help anytime from our global support team via chat or email.</p>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact" class="text-center text-gray-500 text-sm mt-20 mb-4">
+      <p>© 2025 KumaKo. All rights reserved.</p>
+    </footer>
+
+  </body>
 </html>
